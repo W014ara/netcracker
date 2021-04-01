@@ -1,8 +1,10 @@
 package netcracker.task1;
 
+import netcracker.task1.dicegame.Dice;
+
 public class Main {
-    public static void main(String[] args) {
-        Quadratic res = new Quadratic(1,3,1);
-        System.out.println(res.getResult());
+    public static void main(String[] args) throws InterruptedException {
+        Dice game = new Dice();
+        game.play();
     }
 }

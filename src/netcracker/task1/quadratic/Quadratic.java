@@ -1,4 +1,4 @@
-package netcracker.task1;
+package netcracker.task1.quadratic;
 
 import java.util.HashMap;
 
