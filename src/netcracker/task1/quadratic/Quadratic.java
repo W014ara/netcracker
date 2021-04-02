@@ -37,8 +37,8 @@ public class Quadratic {
             result.put("Result", "No rational solution");
         } else {
             //Declare two roots according to the main theorem of algebra
-            double result_1 = (-1 * b) - Math.sqrt(d.discriminant(this.a, this.b, this.c));
-            double result_2 = (-1 * b) + Math.sqrt(d.discriminant(this.a, this.b, this.c));
+            double result_1 = ((-1 * b) - Math.sqrt(d.discriminant(this.a, this.b, this.c))) / (2 * this.a);
+            double result_2 = ((-1 * b) + Math.sqrt(d.discriminant(this.a, this.b, this.c))) / (2 * this.a);
             result.put("x1", String.valueOf(result_1));
             result.put("x2", String.valueOf(result_2));
         }
