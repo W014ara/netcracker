@@ -4,6 +4,7 @@ import java.util.HashMap;
 
 /**
  * A class that implements the calculation of the roots of a quadratic equation
+ *
  * @autor Bezruk Vladislav
  */
 public class Quadratic {
@@ -13,11 +14,12 @@ public class Quadratic {
 
     /**
      * Constructor - Creating a new object with a set of coefficients
+     *
      * @param a - coefficient at x^2
      * @param b - coefficient at x
      * @param c - free term function
      */
-    public Quadratic(double a, double b, double c){
+    public Quadratic(double a, double b, double c) {
         this.a = a;
         this.b = b;
         this.c = c;
@@ -25,14 +27,15 @@ public class Quadratic {
 
     /**
      * Resulting function
+     *
      * @return returns the roots of a quadratic equation
      */
-    public HashMap<String, String> getResult(){
-        HashMap <String, String> result = new HashMap<>();
+    public HashMap<String, String> getResult() {
+        HashMap<String, String> result = new HashMap<>();
         Discriminant d = new Discriminant();
-        if(d.discriminant(this.a, this.b, this.c) < 0){
+        if (d.discriminant(this.a, this.b, this.c) < 0) {
             result.put("Result", "No rational solution");
-        }else{
+        } else {
             //Declare two roots according to the main theorem of algebra
             double result_1 = (-1 * b) - Math.sqrt(d.discriminant(this.a, this.b, this.c));
             double result_2 = (-1 * b) + Math.sqrt(d.discriminant(this.a, this.b, this.c));
@@ -44,17 +47,19 @@ public class Quadratic {
 
     /**
      * A class that implements the operation of calculating the discriminant
+     *
      * @autor Bezruk Vladislav
      */
     public static class Discriminant {
         /**
          * Discriminant calculation function
+         *
          * @param a - coefficient at x^2
          * @param b - coefficient at x
          * @param c - free term function
          * @return returns the value of the discriminant
          */
-        public double discriminant(double a, double b, double c){
+        public double discriminant(double a, double b, double c) {
             return Math.pow(b, 2) - (4 * a * c);
         }
     }
