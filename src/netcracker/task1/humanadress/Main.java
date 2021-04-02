@@ -20,14 +20,19 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<Human> people = generatePeople();
         //Task_1
+        System.out.println("Task 1:");
         findHumanBySecondName(people, "Ivanov");
         //Task_2
+        System.out.println("\n\nTask 2:");
         findHumanByAddressAttribute(people, "city", "moscow");
         //Task_3
+        System.out.println("\n\nTask 3:");
         findPeopleAmongDates(people, "2000-01-01", "2021-04-02");
         //Task_4
+        System.out.println("\n\nTask 4:");
         findElderHuman(people);
         //Task_5
+        System.out.println("\n\nTask 5:");
         findPeopleByCommonStreet(people);
     }
 }

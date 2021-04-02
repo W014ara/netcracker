@@ -35,6 +35,8 @@ public class Quadratic {
         Discriminant d = new Discriminant();
         if (d.discriminant(this.a, this.b, this.c) < 0) {
             result.put("Result", "No rational solution");
+        } else if (this.a == 0) {
+            result.put("Result", "The equation is not square");
         } else {
             //Declare two roots according to the main theorem of algebra
             double result_1 = ((-1 * b) - Math.sqrt(d.discriminant(this.a, this.b, this.c))) / (2 * this.a);

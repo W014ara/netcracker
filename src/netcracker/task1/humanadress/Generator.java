@@ -58,7 +58,7 @@ public class Generator {
     public static ArrayList<Human> generatePeople() {
         ArrayList<Human> people = new ArrayList<>();
         int peopleCount;
-        System.out.println("Сколько людей сгенерировать?");
+        System.out.println("How many people need to be generated?");
         Scanner peopleCountScanner = new Scanner(System.in);
         peopleCount = peopleCountScanner.nextInt();
         for (int index = 0; index < peopleCount; ++index) {
