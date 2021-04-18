@@ -6,10 +6,10 @@ package application.task3;
  */
 public class ExtendedClass {
     //main class fields
-    byte b;
-    int i;
-    double d;
-    String s;
+    private byte b;
+    private int i;
+    private double d;
+    private String s;
 
     /**
      * Constructor - create new object with special values
