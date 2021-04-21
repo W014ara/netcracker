@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Регистрация</title>
+</head>
+<body>
+    <div class="registration_block">
+        <div class="registration_block__wrapper">
+            <section class="registration_block__header">
+                <h1>Регистрация</h1>
+            </section>
+            <section class="registration_block__content">
+                <form action="" autocomplete="off" id="content__identificationalForm">
+                    <div class="content__names">
+                        <div class="firstname">
+                            <input type="text" id="firstname" required>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="firstname">Имя</label>
+                                    <div class="markstatus complete"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lastname">
+                            <input type="text" id="lastname" required>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="lastname">Фамилия</label>
+                                    <div class="markstatus"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="login">
+                            <input type="text" id="login">
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="login">Придумайте логин</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__pswd">
+                        <div class="pswd">
+                            <input type="password" id="pswd" required>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="pswd">Придумайте пароль</label>
+                                    <button type="button" title="Показать текст" class="markstatus pswd"></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pswd__submit">
+                            <input type="password" id="pswd-submit" required>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="pswd-submit">Подтвердите пароль</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content__phone">
+                        <!-- Toggle this if click button `toggle-hasphone` -->
+                        <div class="hasphone">
+                            <input type="text" id="phone-number" required>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="phone-number">Номер мобильного телефона</label>
+                                </div>
+                            </div>
+                            <div class="toggle-hasphone-zero">
+                                <span>У меня нет телефона</span>
+                            </div>
+                        </div>
+                        <!-- Toggle this if click button `toggle-hasphone` -->
+                        <div class="hasnophone" style="display:none">
+                            <div class="control-question">
+                                <div class="current-option">
+                                    <div class="current-option-wrapper">
+                                        <select class="control-question-select" id="control-question" value="1">
+                                            <option value="1" selected="selected">Название улицы, на которой вы вырослиdddddddddddddddddddddddddddddddddddddd</option>
+                                            <option value="2">Фамилия вашего любимого музыканта</option>
+                                            <option value="3">Ваш любимый киногерой</option>
+                                            <option value="4">Дата рождения бабушки</option>
+                                            <option value="5">Почтовый индекс родителей</option>
+                                            <option value="6">Задайте собственный вопрос</option>
+                                            <option value="7">Марка вашей первой машины</option>
+                                            <option value="8">Фамилия вашего любимого учителя</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="__headcontent">
+                                <div class="__headcontent__wrapper">
+                                    <label for="pswd-submit" class="pswd-submit">Выберите контрольный вопрос</label>
+                                </div>
+                            </div>
+                            <div class="toggle-hasphone-first">
+                                <span>Ввести номер телефона</span>
+                            </div>
+                            <div class="question-answer-wrapper">
+                                <div class="__headcontent">
+                                    <div class="__headcontent__wrapper">
+                                        <label for="question-answer">Ответ на контрольный вопрос</label>
+                                    </div>
+                                </div>
+                                <input type="text" id="question-answer" required>
+                            </div>
+                            <div class="captcha-wrapper">
+                                <div class="captcha-input-content">
+                                    <div class="__headcontent">
+                                        <div class="__headcontent__wrapper">
+                                            <label for="captcha-answer">Введите символы</label>
+                                        </div>
+                                    </div>
+                                    <input type="text" id="captcha-answer" required>
+                                </div>
+                                <div class="captcha-photo-block"></div>
+                                <div class="captcha-code-help">
+                                    <button class="repick-code" type="button">Другой код</button>
+                                    <button class="get-voice-code" type="button">Прослушать код</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="registration_block__submit">
+                        <div class="submit-btn-submit-wrapper">
+                            <button type="submit" class="btn-submit disabled" disabled id="form-submit">
+                                Зарегистрироваться
+                            </button>
+                            <p>Нажимая кнопку «Зарегистрироваться»:</p>
+                        </div>
+                        <div class="registration_eula">
+                            <div class="form_eula">
+                                <input type="checkbox" class="form_eula-checkbox" id="eula" name="eula" value="accept">
+                                <label for="eula">
+                                    <span>Я принимаю условия
+                                        <a href="https://yandex.ru/legal/rules/">Пользовательского соглашения</a> и даю своё согласие
+                                        Яндексу на обработку моей персональной информации на условиях,
+                                        определенных
+                                        <a href="https://yandex.ru/legal/confidential/">Политикой конфиденциальности.</a></span>
+                                </label>
+                            </div>
+                            <div class="permissionCheckbox">
+                                <input type="checkbox" class="permissionCheckbox-checkbox" id="permission" name="permission" value="accept">
+                                <label for="permission">
+                                    <span>Я не хочу получать рекламу и другие предложения данного сервиса Яндекса</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
+</body>
+</html>

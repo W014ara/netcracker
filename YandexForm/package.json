@@ -1,0 +1,14 @@
+{
+  "name": "yandexform",
+  "version": "1.0.0",
+  "description": "Analogue of Yandex registration presented on the website https://passport.yandex.ru/registration ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "W014ara",
+  "license": "ISC",
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
