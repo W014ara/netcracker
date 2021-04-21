@@ -1,0 +1,11 @@
+{
+  "name": "binarysearch",
+  "version": "1.0.0",
+  "description": "A simple algorithm for comparing linear and binary search ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
