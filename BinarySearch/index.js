@@ -4,7 +4,7 @@ let arr = [1,2,3,4,5,6,7,8];
 let targetElem = 8;
 
 /**
- * Performs a standard binary search for an element in an array
+ * Performs a standard linear search for an element in an array
  * @param {Array}} source array
  * @param {Number} original number
  * @returns - returns the index of an element in an array.
@@ -21,7 +21,7 @@ function liniearSearch(array, digit){
 }
 
 /**
- * Performs a standard liniear search for an element in an array
+ * Performs a standard binary search for an element in an array
  * @param {Array} source array
  * @param {Number} original number
  * @returns - returns the index of an element in an array.
