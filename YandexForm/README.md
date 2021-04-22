@@ -28,7 +28,6 @@
 
 ```
 │   index.html
-│   package-lock.json
 │   package.json
 │   README.md
 │
