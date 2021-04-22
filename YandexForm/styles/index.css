@@ -15,8 +15,10 @@ button:focus {
 }
 
 .registration_block {
-  margin: 0 auto;
-  margin-top: 5%;
+  /*
+        Позиционирование формы можно писать здесь
+        e.g: margin: 0 auto; margin-top: 5%;
+    */
   width: 400px;
   -webkit-box-shadow: 0px 0px 22px -2px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 0px 22px -2px rgba(0, 0, 0, 0.1);
@@ -929,7 +931,6 @@ button:focus {
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone .control-question .current-option .current-option-wrapper {
   width: 300px;
-  text-overflow: ellipsis;
   background: url("../src/img/select-arrow.PNG") no-repeat right;
   background-size: 20px;
   height: 48px;
@@ -941,6 +942,7 @@ button:focus {
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone .control-question .current-option .current-option-wrapper .control-question-select {
   font-size: 18px;
   background: transparent;
+  text-overflow: ellipsis;
   width: 300px;
   padding: 15px;
   font-size: 16px;
@@ -1309,19 +1311,19 @@ button:focus {
   src: url("../src/font/YandexSansRegular.woff2");
 }
 
-/* Обычный */
+/* Чуть толще стандартного */
 @font-face {
   font-family: 'Yandex Bolder';
   src: url("../src/font/YandexSansRegularBolder.woff2");
 }
 
-/* Обычный */
+/* Шрифт средней толщины */
 @font-face {
   font-family: 'Yandex Medium';
   src: url("../src/font/YandexSansMedium.woff2");
 }
 
-/* Обычный */
+/* Жирный шрифт */
 @font-face {
   font-family: 'Yandex Bold';
   src: url("../src/font/YandexSansBold.woff2");

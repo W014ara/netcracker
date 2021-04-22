@@ -1,29 +1,42 @@
+$inputMainColor: #f2f2f2;
+$inputWrongColor: red;
+$labelMainColor: #999;
+$yandexRegistrationBtnColor: #ffdb4d;
+$linkColor: #04b;
+$disabledColor: grey;
+$markCompleColor: #37b24d;
+
 @mixin registration-input-styles {
-    .__headcontent{
-        position:absolute;
-        width:300px;
-        .__headcontent__wrapper{
-            display:flex;
-            justify-content:space-between;
-            label{
+    .__headcontent {
+        position: absolute;
+        width: 300px;
+
+        .__headcontent__wrapper {
+            display: flex;
+            justify-content: space-between;
+
+            label {
                 font-family: 'Yandex Bolder';
                 font-style: bold;
                 font-size: 15px;
-                order:-1;
-                color:#999;
+                order: -1;
+                color: $labelMainColor;
             }
-            .pswd-submit{
+
+            .pswd-submit {
                 font-size: 13px;
             }
-            .markstatus{
+
+            .markstatus {
                 opacity: 0;
-                &.complete{
+
+                &.complete {
                     opacity: 100;
                     right: 5px;
                     top: 5px;
                     width: 6px;
                     height: 15px;
-                    border: solid #37b24d;
+                    border: solid $markCompleColor;
                     border-width: 0 2px 2px 0;
                     -webkit-transform: rotate(45deg);
                     -ms-transform: rotate(45deg);
@@ -33,7 +46,8 @@
                     -o-transition: opacity .5s ease-in;
                     transition: opacity .5s ease-in;
                 }
-                &.pswd{
+
+                &.pswd {
                     opacity: 25%;
                     border: none;
                     outline: none;
@@ -41,15 +55,18 @@
                     height: 20px;
                     background: url("../src/img/eye.svg") no-repeat;
                     background-size: contain;
-                    transition:.2s;
-                    &:active{
+                    transition: .2s;
+
+                    &:active {
                         outline: none;
                     }
-                    &:hover{
+
+                    &:hover {
                         cursor: pointer;
                         opacity: 100%;
                     }
-                    &.active{
+
+                    &.active {
                         width: 23px;
                         height: 25px;
                         background: url("../src/img/eye-clear.svg") no-repeat;
@@ -61,147 +78,175 @@
     }
 }
 
-@mixin content-input-styles{
-    input{
+@mixin content-input-styles {
+    input {
         margin-top: 20px;
-        width:300px;
+        width: 300px;
         height: 0px;
-        outline:0;
+        outline: 0;
         border-width: 0 0 2px;
-        border-color: #f2f2f2;
+        border-color: $inputMainColor;
         font-family: 'Yandex Bolder';
-        color:black;
-        transition:.2s;
-        &:focus{
-           height:20px;
-           outline:0;
-           border-color: #ffdb4d;
+        color: black;
+        transition: .2s;
+
+        &:focus {
+            height: 20px;
+            outline: 0;
+            border-color: $yandexRegistrationBtnColor;
         }
-        &.focus{
-            height:20px;
-            outline:0;
-            border-color: #ffdb4d;
+
+        &.focus {
+            height: 20px;
+            outline: 0;
+            border-color: $yandexRegistrationBtnColor;
         }
-        &.notCompleted{
-            outline:0;
-            border-color: red;
+
+        &.notCompleted {
+            outline: 0;
+            border-color: $inputWrongColor;
         }
-        &.completed{
-            height:20px;
-            outline:0;
-            border-color: #ffdb4d;
+
+        &.completed {
+            height: 20px;
+            outline: 0;
+            border-color: $yandexRegistrationBtnColor;
         }
-        &.invalidPswd{
-            height:20px;
-            outline:0;
-            border-color: red;
+
+        &.invalidPswd {
+            height: 20px;
+            outline: 0;
+            border-color: $inputWrongColor;
         }
     }
+
     @include registration-input-styles
 }
 
 
-button{
-    border:none;
-    outline:none;
-    &:hover{
-        outline:none;
+button {
+    border: none;
+    outline: none;
+
+    &:hover {
+        outline: none;
         cursor: pointer;
     }
-    &:focus{
-        border:none;
-        outline:none;
+
+    &:focus {
+        border: none;
+        outline: none;
     }
 }
 
 
-.registration_block{
-    margin: 0 auto;
-    margin-top: 5%;
-    width:400px;
+.registration_block {
+    /*
+        Позиционирование формы можно писать здесь
+        e.g: margin: 0 auto; margin-top: 5%;
+    */
+
+    width: 400px;
     box-shadow: 0px 0px 22px -2px rgba(0, 0, 0, 0.1);
-    .registration_block__wrapper{
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        padding:30px;
-        .registration_block__header{
-            width:300px;
+
+    .registration_block__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+
+        .registration_block__header {
+            width: 300px;
             font-family: 'Yandex Bolder';
             font-size: 10px;
             letter-spacing: 0.1em;
             text-align: center;
         }
-        .registration_block__content{
+
+        .registration_block__content {
             margin-top: 20px;
-            width:300px;
+            width: 300px;
+
             //Authorization form
-            #content__identificationalForm{
-                display:flex;
+            #content__identificationalForm {
+                display: flex;
                 flex-direction: column;
                 gap: 40px;
-                .content__names{
-                    margin:0 auto;
-                    display:flex;
+
+                .content__names {
+                    margin: 0 auto;
+                    display: flex;
                     flex-direction: column;
-                    gap:40px;
-                    .firstname{
-                        display:flex;
-                        flex-direction:column;
+                    gap: 40px;
+
+                    .firstname {
+                        display: flex;
+                        flex-direction: column;
                         @include content-input-styles;
                     }
-                    .lastname{
-                        display:flex;
-                        flex-direction:column;
+
+                    .lastname {
+                        display: flex;
+                        flex-direction: column;
                         @include content-input-styles;
                     }
-                    .login{
-                        display:flex;
-                        flex-direction:column;
-                        @include content-input-styles;
-                    }
-                }
-                .content__pswd{
-                    margin:0 auto;
-                    display:flex;
-                    flex-direction:column;
-                    gap:40px;
-                    .pswd{
-                        display:flex;
-                        flex-direction:column;
-                        @include content-input-styles;
-                    }
-                    .pswd__submit{
-                        display:flex;
-                        flex-direction:column;
+
+                    .login {
+                        display: flex;
+                        flex-direction: column;
                         @include content-input-styles;
                     }
                 }
-                .content__phone{
-                    margin:0 auto;
-                    display:flex;
-                    flex-direction:column;
-                    gap:40px;
-                    .hasphone{
-                        display:flex;
-                        flex-direction:column;
+
+                .content__pswd {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .pswd {
+                        display: flex;
+                        flex-direction: column;
                         @include content-input-styles;
-                        .toggle-hasphone-zero{
+                    }
+
+                    .pswd__submit {
+                        display: flex;
+                        flex-direction: column;
+                        @include content-input-styles;
+                    }
+                }
+
+                .content__phone {
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    .hasphone {
+                        display: flex;
+                        flex-direction: column;
+                        @include content-input-styles;
+
+                        .toggle-hasphone-zero {
                             margin-top: 4px;
-                            span{
+
+                            span {
                                 font-family: 'Yandex Bolder';
                                 font-size: 15px;
-                                color:#04b;
+                                color: $linkColor;
                                 transition: color .15s linear;
-                                &:hover{
+
+                                &:hover {
                                     cursor: pointer;
                                 }
                             }
                         }
-                        .verificationPhone{
+
+                        .verificationPhone {
                             margin-top: 10px;
-                            width:100%;
-                            height:50px;
+                            width: 100%;
+                            height: 50px;
                             border-radius: 10px;
                             transition: .5s;
                             font-family: 'Yandex Bold';
@@ -211,101 +256,118 @@ button{
                             align-items: center;
                             justify-content: center;
                             box-sizing: border-box;
-                            &:hover{
+
+                            &:hover {
                                 cursor: pointer;
-                                background:#f5f4f4;
+                                background: #f5f4f4;
                             }
                         }
                     }
-                    .hasnophone{
-                        display:flex;
-                        flex-direction:column;
-                        .control-question{
-                            display:flex;
-                            justify-content:center;
+
+                    .hasnophone {
+                        display: flex;
+                        flex-direction: column;
+
+                        .control-question {
+                            display: flex;
+                            justify-content: center;
                             align-items: center;
                             margin-top: 20px;
-                            width:300px;
-                            height:40px;
-                            border:1px solid rgb(155, 154, 154);
+                            width: 300px;
+                            height: 40px;
+                            border: 1px solid rgb(155, 154, 154);
                             border-radius: 10px;
-                            .current-option{
-                                position:absolute;
-                                .current-option-wrapper{
+
+                            .current-option {
+                                position: absolute;
+
+                                .current-option-wrapper {
                                     width: 300px;
-                                    text-overflow: ellipsis;
                                     background: url("../src/img/select-arrow.PNG") no-repeat right;
                                     background-size: 20px;
                                     height: 48px;
                                     border-radius: 10px;
                                     font-family: 'Yandex Regular';
                                     font-size: 15px;
-                                    .control-question-select{
+
+                                    .control-question-select {
                                         font-size: 18px;
                                         background: transparent;
+                                        text-overflow: ellipsis;
                                         width: 300px;
                                         padding: 15px;
                                         font-size: 16px;
                                         line-height: 1;
                                         border: 0;
                                         height: 50px;
-                                        border: 1px solid grey;
-                                        color:black;
+                                        border: 1px solid $disabledColor;
+                                        color: black;
                                         border-radius: 10px;
                                         -webkit-appearance: none;
-                                            padding-right: 55px;
+                                        padding-right: 55px;
                                         box-sizing: border-box;
-                                        outline:none;
-                                        border:none;
+                                        outline: none;
+                                        border: none;
                                     }
                                 }
                             }
                         }
-                        .toggle-hasphone-first{
+
+                        .toggle-hasphone-first {
                             margin-top: 5px;
-                            span{
+
+                            span {
                                 font-family: 'Yandex Bolder';
                                 font-size: 14px;
-                                color:#04b;
+                                color: $linkColor;
                                 transition: color .15s linear;
-                                &:hover{
+
+                                &:hover {
                                     cursor: pointer;
                                 }
                             }
                         }
+
                         @include content-input-styles;
-                        .question-answer-wrapper{
+
+                        .question-answer-wrapper {
                             margin-top: 20px;
                         }
-                        .captcha-wrapper{
-                            display:flex;
+
+                        .captcha-wrapper {
+                            display: flex;
                             flex-direction: column;
-                            justify-content:center;
+                            justify-content: center;
                             align-items: center;
                             margin-top: 20px;
-                            .captcha-photo-block{
-                                margin:0 auto;
+
+                            .captcha-photo-block {
+                                margin: 0 auto;
                                 margin-top: 10px;
-                                width:250px;
-                                height:80px;
+                                width: 250px;
+                                height: 80px;
                                 background: url("../src/img/captcha-example.PNG") no-repeat;
                                 background-size: cover;
-                                &.active{
+
+                                &.active {
                                     background: url("../src/img/captcha-voice.PNG") no-repeat;
                                     background-position-x: 50%;
-                                    &:hover{
+
+                                    &:hover {
                                         cursor: pointer;
                                     }
                                 }
                             }
-                            .captcha-code-help{
+
+                            .captcha-code-help {
                                 margin-top: 10px;
-                                width:300px;
-                                display:flex;
+                                width: 300px;
+                                display: flex;
                                 flex-wrap: nowrap;
-                                justify-content:space-between;
-                                button{
-                                    background:none;
+                                justify-content: space-between;
+
+                                button {
+                                    background: none;
                                     font-family: 'Yandex Bolder';
                                     font-size: 12px;
                                 }
@@ -313,55 +375,64 @@ button{
                         }
                     }
                 }
-                .registration_block__submit{
-                    .submit-btn-submit-wrapper{
-                        #form-submit{
-                            width:100%;
-                            height:50px;
+
+                .registration_block__submit {
+                    .submit-btn-submit-wrapper {
+                        #form-submit {
+                            width: 100%;
+                            height: 50px;
                             border-radius: 10px;
                             transition: .2s;
-                            background:#fc0;
+                            background: #fc0;
                             text-align: center;
                             font-family: 'Yandex Bold';
                             font-size: 18px;
-                            &.disabled{
-                                color:grey;
-                                background:#f2f2f2;
-                                &:hover{
-                                    background:#f2f2f2;
+
+                            &.disabled {
+                                color: $disabledColor;
+                                background: $inputMainColor;
+
+                                &:hover {
+                                    background: $inputMainColor;
                                 }
                             }
-                            &:hover{
-                                background:#fac000;
+
+                            &:hover {
+                                background: #fac000;
                             }
                         }
-                        p{
+
+                        p {
                             font-family: 'Yandex Bolder';
                             font-size: 14px;
-                            color:#999;
+                            color: $labelMainColor;
                             text-align: start;
                         }
                     }
                 }
-                .registration_eula{
+
+                .registration_eula {
                     display: flex;
                     flex-wrap: nowrap;
                     flex-direction: column;
-                    width:300px;
-                    margin:0 auto;
-                    gap:20px;
-                    .form_eula-checkbox{
+                    width: 300px;
+                    margin: 0 auto;
+                    gap: 20px;
+
+                    .form_eula-checkbox {
                         position: absolute;
                         z-index: -1;
                         opacity: 0;
                     }
+
                     .form_eula-checkbox+label {
                         display: flex;
                         align-items: center;
                         user-select: none;
                     }
+
                     .form_eula-checkbox+label::before {
-                        transition:.4s;
+                        transition: .4s;
                         content: '';
                         display: inline-block;
                         width: 1em;
@@ -376,32 +447,38 @@ button{
                         background-position: center center;
                         background-size: 50% 50%;
                     }
+
                     .form_eula-checkbox:checked+label::before {
                         border-color: #545454;
                         background-color: #545454;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
                     }
-                    span{
+
+                    span {
                         font-family: 'Yandex Regular';
                         font-size: 15px;
-                        a{
-                            color:#04b;
+
+                        a {
+                            color: $linkColor;
                         }
                     }
                 }
-                .permissionCheckbox{
-                    .permissionCheckbox-checkbox{
+
+                .permissionCheckbox {
+                    .permissionCheckbox-checkbox {
                         position: absolute;
                         z-index: -1;
                         opacity: 0;
                     }
+
                     .permissionCheckbox-checkbox+label {
                         display: flex;
                         align-items: center;
                         user-select: none;
                     }
+
                     .permissionCheckbox-checkbox+label::before {
-                        transition:.4s;
+                        transition: .4s;
                         content: '';
                         display: inline-block;
                         width: 1em;
@@ -416,12 +493,14 @@ button{
                         background-position: center center;
                         background-size: 50% 50%;
                     }
+
                     .permissionCheckbox-checkbox:checked+label::before {
                         border-color: #545454;
                         background-color: #545454;
                         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
                     }
-                    span{
+
+                    span {
                         font-family: 'Yandex Regular';
                         font-size: 15px;
                     }
@@ -430,26 +509,27 @@ button{
         }
     }
 }
-/* Обычный */
-@font-face {
-	font-family: 'Yandex Regular';
-	src: url("../src/font/YandexSansRegular.woff2");
-}
 
 /* Обычный */
 @font-face {
-	font-family: 'Yandex Bolder';
-	src: url("../src/font/YandexSansRegularBolder.woff2");
+    font-family: 'Yandex Regular';
+    src: url("../src/font/YandexSansRegular.woff2");
 }
 
-/* Обычный */
+/* Чуть толще стандартного */
 @font-face {
-	font-family: 'Yandex Medium';
-	src: url("../src/font/YandexSansMedium.woff2");
+    font-family: 'Yandex Bolder';
+    src: url("../src/font/YandexSansRegularBolder.woff2");
 }
 
-/* Обычный */
+/* Шрифт средней толщины */
 @font-face {
-	font-family: 'Yandex Bold';
-	src: url("../src/font/YandexSansBold.woff2");
+    font-family: 'Yandex Medium';
+    src: url("../src/font/YandexSansMedium.woff2");
+}
+
+/* Жирный шрифт */
+@font-face {
+    font-family: 'Yandex Bold';
+    src: url("../src/font/YandexSansBold.woff2");
 }
