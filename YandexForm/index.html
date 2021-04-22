@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./src/img/yandeks-vpervye-obog.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/index.css">
     <title>Регистрация</title>
@@ -15,14 +16,14 @@
                 <h1>Регистрация</h1>
             </section>
             <section class="registration_block__content">
-                <form action="" autocomplete="off" id="content__identificationalForm">
+                <form action="POST" id="content__identificationalForm" name="controlForm">
                     <div class="content__names">
                         <div class="firstname">
                             <input type="text" id="firstname" required>
                             <div class="__headcontent">
                                 <div class="__headcontent__wrapper">
                                     <label for="firstname">Имя</label>
-                                    <div class="markstatus complete"></div>
+                                    <div class="markstatus"></div>
                                 </div>
                             </div>
                         </div>
@@ -40,6 +41,7 @@
                             <div class="__headcontent">
                                 <div class="__headcontent__wrapper">
                                     <label for="login">Придумайте логин</label>
+                                    <div class="markstatus"></div>
                                 </div>
                             </div>
                         </div>
@@ -66,7 +68,7 @@
                     <div class="content__phone">
                         <!-- Toggle this if click button `toggle-hasphone` -->
                         <div class="hasphone">
-                            <input type="text" id="phone-number" required>
+                            <input type="text" id="phone-number" placeholder="В формате +7 XXXXXXXXXX">
                             <div class="__headcontent">
                                 <div class="__headcontent__wrapper">
                                     <label for="phone-number">Номер мобильного телефона</label>
@@ -108,7 +110,7 @@
                                         <label for="question-answer">Ответ на контрольный вопрос</label>
                                     </div>
                                 </div>
-                                <input type="text" id="question-answer" required>
+                                <input type="text" id="question-answer" >
                             </div>
                             <div class="captcha-wrapper">
                                 <div class="captcha-input-content">
@@ -117,7 +119,7 @@
                                             <label for="captcha-answer">Введите символы</label>
                                         </div>
                                     </div>
-                                    <input type="text" id="captcha-answer" required>
+                                    <input type="text" id="captcha-answer">
                                 </div>
                                 <div class="captcha-photo-block"></div>
                                 <div class="captcha-code-help">

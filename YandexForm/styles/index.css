@@ -88,7 +88,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -99,6 +99,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .firstname input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .firstname input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .firstname input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .firstname input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .firstname .__headcontent {
@@ -191,7 +214,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -202,6 +225,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .lastname input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .lastname input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .lastname input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .lastname input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .lastname .__headcontent {
@@ -294,7 +340,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -305,6 +351,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .login input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .login input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .login input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .login input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__names .login .__headcontent {
@@ -409,7 +478,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -420,6 +489,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd .__headcontent {
@@ -512,7 +604,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -523,6 +615,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd__submit input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd__submit input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd__submit input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd__submit input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__pswd .pswd__submit .__headcontent {
@@ -627,7 +742,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -638,6 +753,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone .__headcontent {
@@ -730,6 +868,34 @@ button:focus {
   cursor: pointer;
 }
 
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone .verificationPhone {
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-family: 'Yandex Bold';
+  font-size: 15px;
+  border: 1px solid #d6d6d6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasphone .verificationPhone:hover {
+  cursor: pointer;
+  background: #f5f4f4;
+}
+
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -814,7 +980,7 @@ button:focus {
   height: 0px;
   outline: 0;
   border-width: 0 0 2px;
-  border-color: red;
+  border-color: #f2f2f2;
   font-family: 'Yandex Bolder';
   color: black;
   -webkit-transition: .2s;
@@ -825,6 +991,29 @@ button:focus {
   height: 20px;
   outline: 0;
   border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone input.focus {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone input.notCompleted {
+  outline: 0;
+  border-color: red;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone input.completed {
+  height: 20px;
+  outline: 0;
+  border-color: #ffdb4d;
+}
+
+.registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone input.invalidPswd {
+  height: 20px;
+  outline: 0;
+  border-color: red;
 }
 
 .registration_block .registration_block__wrapper .registration_block__content #content__identificationalForm .content__phone .hasnophone .__headcontent {
