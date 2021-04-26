@@ -1,1 +1,1 @@
-# Netcracker Задания JavaScript весна 2021 :squirrel: 
+# Netcracker Задания JavaScript весна 2021 :shipit:
