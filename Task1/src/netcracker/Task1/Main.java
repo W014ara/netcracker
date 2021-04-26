@@ -22,35 +22,35 @@ public class Main {
         Vectors vec1 = new Vectors(3.0, arrayToArrayList(vector1elems));
         Vectors vec2 = new Vectors(3.0, arrayToArrayList(vector2elems));
         Vectors vec3 = new Vectors(3.0, arrayToArrayList(vector3elems));
-        System.out.println(Vectors.vectorScalar(vec1, 2.0)); //->[3.0, 2.0, 4.0, 6.0]
-        System.out.println(Vectors.vectorAddition(vec1, vec2)); //->[3.0, 4.0, 6.0, 8.0]
-        System.out.println(Vectors.dotVectorsProduct(vec1, vec2)); //->26;
+//        System.out.println(Vectors.vectorScalar(vec1, 2.0)); //->[3.0, 2.0, 4.0, 6.0]
+//        System.out.println(Vectors.vectorAddition(vec1, vec2)); //->[3.0, 4.0, 6.0, 8.0]
+//        System.out.println(Vectors.dotVectorsProduct(vec1, vec2)); //->26;
         //Task2
-        Vectors.outputVector(vec1, new ByteArrayOutputStream());
+//        Vectors.outputVector(vec1, new ByteArrayOutputStream());
         //Task3
-        Vectors[] vecArr = {vec1, vec2};
-        Vectors[] vecArr0 = {vec3};
-        //Create arrayVectors
-        ArrayVector arrayVector = new ArrayVector(vecArr);
-        ArrayVector arrayVector0 = new ArrayVector(vecArr0);
-        //Create LinkedListVectors
-        LinkedList<Vectors> linkList = new LinkedList<>(Arrays.asList(vecArr));
-        LinkedList<Vectors> linkList0 = new LinkedList<>(Arrays.asList(vecArr0));
-        LinkedListVector lLinked = new LinkedListVector(linkList);
-        LinkedListVector lLinked0 = new LinkedListVector(linkList0);
-
-        System.out.println("Compare different array vectors:");
-        System.out.println(arrayVector.equals(arrayVector0));
-        arrayVector.writeToFile("test.bin");
-        System.out.println("Compare original array and array from file:");
-        System.out.println(arrayVector.equals(arrayVector.readFromFile("test.bin")));
-
-        System.out.println("Compare different linklist vectors:");
-        System.out.println(lLinked.equals(lLinked0));
-        lLinked.writeToFile("test.txt");
-        System.out.println("Compare original linklist and linklist from file:");
-        System.out.println(lLinked.equals(lLinked.readFromFile("test.bin")));
-
+//        Vectors[] vecArr = {vec1, vec2};
+//        Vectors[] vecArr0 = {vec3};
+//        //Create arrayVectors
+//        ArrayVector arrayVector = new ArrayVector(vecArr);
+//        ArrayVector arrayVector0 = new ArrayVector(vecArr0);
+//        //Create LinkedListVectors
+//        LinkedList<Vectors> linkList = new LinkedList<>(Arrays.asList(vecArr));
+//        LinkedList<Vectors> linkList0 = new LinkedList<>(Arrays.asList(vecArr0));
+//        LinkedListVector lLinked = new LinkedListVector(linkList);
+//        LinkedListVector lLinked0 = new LinkedListVector(linkList0);
+//
+//        System.out.println("Compare different array vectors:");
+//        System.out.println(arrayVector.equals(arrayVector0));
+//        arrayVector.writeToFile("test.bin");
+//        System.out.println("Compare original array and array from file:");
+//        System.out.println(arrayVector.equals(arrayVector.readFromFile("test.bin")));
+//
+//        System.out.println("Compare different linklist vectors:");
+//        System.out.println(lLinked.equals(lLinked0));
+//        lLinked.writeToFile("test.txt");
+//        System.out.println("Compare original linklist and linklist from file:");
+//        System.out.println(lLinked.equals(lLinked.readFromFile("test.bin")));
+//
         //Task4
         System.out.println("Task4");
         SerializeMyClassToBePersisted.writeMyClassToFile("test4.bin", "fio", "lio");
