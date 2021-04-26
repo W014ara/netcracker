@@ -1,1 +1,1 @@
-# Netcracker Задания JavaScript весна 2021 :shipit:
+# Netcracker Задания JavaScript весна 2021 :octocat:
