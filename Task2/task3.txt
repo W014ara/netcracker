@@ -1,0 +1,25 @@
+Oracle JDK Migration Guide Release 12
+F13815-02
+March 2019
+
+ 
+
+
+
+
+Getting Started
+The purpose of this guide is to help you identify potential issues and give you suggestions on how to proceed as you migrate your existing Java application to the JDK 12 release. The guide also highlights the significant changes and enhancements done to the JDK 12 release.
+This guide contains the following sections:
+•	Significant Changes in the JDK
+•	Preparing For Migration
+•	Migrating From JDK 8 to Later JDK Releases
+•	Next Steps
+
+Significant Changes in the JDK
+
+Before migrating your application to the latest JDK release, you must understand what the updates and changes are between it and the previous JDK release. If you are migrating from JDK 8, you should also be familiar with the differences between JDK 8 and later releases that are described in Migrating From JDK 8 to Later JDK Releases.
+See the following sections to know some of the significant changes in latest JDK releases.
+
+Significant Changes in JDK 12 Release
+The following are some of the important additions and updates in Java SE 12 and JDK 12:
+•	JVM Constants API is introduced to model nominal descriptions of key class-file and run-time artifacts, in particular constants that are loadable from the constant pool. See JVM Constant API.
